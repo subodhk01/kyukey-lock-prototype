@@ -1,0 +1,143 @@
+@import url(//db.onlinewebfonts.com/c/7cc6719bd5f0310be3150ba33418e72e?family=Comic+Sans+MS);
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    transition: all 0.5s;
+}
+#user_info {
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.ham-menu {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+.ham-menu img {
+    height: 60px;
+}
+.heading-inside {
+    font-size: 3rem;
+    padding: 0px 10px;
+    text-align: center;
+    font-family: "Comic Sans MS",'Lobster','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0D47A1;
+}
+.card1-header {
+    background-image: url("../images/arrow2.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: left;
+    color: white;
+    height: 58px;
+    vertical-align: middle;
+    padding: 13px 18px;
+    font-size: 20px;
+}
+.right-head {
+    background-image: url("../images/arrow.png");
+    background-position: right;
+    text-align: right;
+}
+.card1-body {
+    padding: 20px;
+}
+.status-body {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.content-container {
+    margin-top: 20px;
+}
+.content-inside .card1 {
+    margin-bottom: 30px !important;
+}
+.card1-body input {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 0;
+}
+.card1-body button {
+    margin-top: 10px;
+    float: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card1-body .form-group {
+    text-align: center;
+}
+#loadingbutton {
+    display: none;
+}
+#generatesuccess {
+    color: #449D44;
+    display: none;
+}
+#generateerror {
+    color: #D9534F;
+    display: none;
+}
+#sharebutton {
+    display: none;
+}
+#sharebutton1 {
+    display: none;
+}
+.dot-green{
+  display: inline-block;
+  border-radius: 50%;
+  width: 50%;
+  background-color: #449D44;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+}
+.dot-red{
+    display: inline-block;
+    border-radius: 50%;
+    width: 50%;
+    background-color: #D9534F;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+}
+.login-form {
+    padding: 20px;
+}
+.register-form {
+    padding: 20px;
+}
+.register-button {
+    text-align: center;
+}
+.login-button {
+    text-align: center;
+}
+.form-control1 {
+    transition: all 0.3s;
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: 0;
+    border-bottom: 2px solid rgb(173, 180, 190);
+    font-size: 1.2rem;
+}
+.form-control1:focus {
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    background: none;
+    background-color: white;
+    border-bottom: 3px solid #0D47A1;
+}
+.form-control1:active {
+    background-color: white;
+    background: none;
+}
+
+
+

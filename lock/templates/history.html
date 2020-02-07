@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lock History | KyuKey</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Salsa&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{% static 'lock/css/index.css' %}">
+    </head>
+
+    <body>
+        <div class="heading-container">
+            <div class="heading-inside">
+                <span>KyuKey</span>
+            </div>
+        </div>
+
+        <div class="content-container">
+            <div class="content-inside">
+                <div class="card1">
+                    <div class="card1-header">Lock History</div>
+                    <div class="card1-body">
+                        {% if count %}
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Time</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for item in history %}
+                                    <tr>
+                                        <td>{{item.time}}</td>
+                                        <td>{{item.state}}</td>
+                                    </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                        {% else %} 
+                            <span>No lock actions yet.</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>
+
+
+
