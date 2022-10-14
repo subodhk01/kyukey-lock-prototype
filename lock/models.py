@@ -1,4 +1,5 @@
 from django.db import models
+
 from django.contrib.auth.models import User
 
 class OTP(models.Model):
@@ -29,3 +30,4 @@ class ShareHistory(models.Model):
 class API(models.Model):
     time = models.DateTimeField(auto_now_add=True)
     content = models.CharField(max_length=500)
+
